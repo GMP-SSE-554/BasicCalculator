@@ -7,26 +7,28 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="leftParenthesis" Content="(" HorizontalAlignment="Left" Margin="511,276,0,0" VerticalAlignment="Top" Click="leftParenthesis_Click" Width="45"/>
-        <Button x:Name="rightParenthesis" Content=")" HorizontalAlignment="Left" Margin="571,276,0,0" VerticalAlignment="Top" Click="rightParenthesis_Click" Width="45"/>
-        <Button x:Name="clearCalc" Content="C" HorizontalAlignment="Left" Margin="631,276,0,0" VerticalAlignment="Top" Click="clearCalc_Click" Width="45"/>
-        <Button x:Name="numSeven" Content="7" HorizontalAlignment="Left" Margin="511,326,0,0" VerticalAlignment="Top" Click="numSeven_Click" Width="45"/>
-        <Button x:Name="numEight" Content="8" HorizontalAlignment="Left" Margin="571,326,0,0" VerticalAlignment="Top" Click="numEight_Click" Width="45"/>
-        <Button x:Name="numNine" Content="9" HorizontalAlignment="Left" Margin="631,326,0,0" VerticalAlignment="Top" Click="numNine_Click" Width="45"/>
-        <Button x:Name="numFour" Content="4" HorizontalAlignment="Left" Margin="511,376,0,0" VerticalAlignment="Top" Click="numFour_Click" Width="45"/>
-        <Button x:Name="numFive" Content="5" HorizontalAlignment="Left" Margin="571,376,0,0" VerticalAlignment="Top" Click="numFive_Click" Width="45"/>
-        <Button x:Name="numSix" Content="6" HorizontalAlignment="Left" Margin="631,376,0,0" VerticalAlignment="Top" Click="numSix_Click" Width="45"/>
-        <Button x:Name="numOne" Content="1" HorizontalAlignment="Left" Margin="511,426,0,0" VerticalAlignment="Top" Click="numOne_Click" Width="45"/>
-        <Button x:Name="numTwo" Content="2" HorizontalAlignment="Left" Margin="571,426,0,0" VerticalAlignment="Top" Click="numTwo_Click" Width="45"/>
-        <Button x:Name="numThree" Content="3" HorizontalAlignment="Left" Margin="631,426,0,0" VerticalAlignment="Top" Click="numThree_Click" Width="45"/>
-        <Button x:Name="multiplyCalc" Content="*" HorizontalAlignment="Left" Margin="691,276,0,0" VerticalAlignment="Top" Click="multiplyCalc_Click" Width="45"/>
-        <Button x:Name="divideCalc" Content="/" HorizontalAlignment="Left" Margin="691,326,0,0" VerticalAlignment="Top" Click="divideCalc_Click" Width="45"/>
-        <Button x:Name="addCalc" Content="+" HorizontalAlignment="Left" Margin="691,376,0,0" VerticalAlignment="Top" Click="addCalc_Click" Width="45"/>
-        <Button x:Name="subtractCalc" Content="-" HorizontalAlignment="Left" Margin="691,426,0,0" VerticalAlignment="Top" Click="subtractCalc_Click" Width="45"/>
-        <Button x:Name="numZero" Content="0" HorizontalAlignment="Left" Margin="511,476,0,0" VerticalAlignment="Top" Click="numZero_Click" Width="45"/>
-        <Button x:Name="numDecimal" Content="." HorizontalAlignment="Left" Margin="571,476,0,0" VerticalAlignment="Top" Click="numDecimal_Click" Width="45"/>
+        <Button x:Name="clearCalc" Content="C" HorizontalAlignment="Left" Margin="509,276,0,0" VerticalAlignment="Top" Click="clearCalc_Click" Width="105"/>
+        <Button x:Name="clearLast" Content="CL" HorizontalAlignment="Left" Margin="631,276,0,0" VerticalAlignment="Top" Click="clearLast_Click" Width="45"/>
+        <Button x:Name="numSeven" Content="7" HorizontalAlignment="Left" Margin="511,326,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numEight" Content="8" HorizontalAlignment="Left" Margin="571,326,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numNine" Content="9" HorizontalAlignment="Left" Margin="631,326,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numFour" Content="4" HorizontalAlignment="Left" Margin="511,376,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numFive" Content="5" HorizontalAlignment="Left" Margin="571,376,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numSix" Content="6" HorizontalAlignment="Left" Margin="631,376,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numOne" Content="1" HorizontalAlignment="Left" Margin="511,426,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numTwo" Content="2" HorizontalAlignment="Left" Margin="571,426,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numThree" Content="3" HorizontalAlignment="Left" Margin="631,426,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="multiplyCalc" Content="*" HorizontalAlignment="Left" Margin="691,276,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="divideCalc" Content="/" HorizontalAlignment="Left" Margin="691,326,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="addCalc" Content="+" HorizontalAlignment="Left" Margin="691,376,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="subtractCalc" Content="-" HorizontalAlignment="Left" Margin="691,426,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numZero" Content="0" HorizontalAlignment="Left" Margin="511,476,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
+        <Button x:Name="numDecimal" Content="." HorizontalAlignment="Left" Margin="571,476,0,0" VerticalAlignment="Top" Click="op_Click" Width="45"/>
         <Button x:Name="answerCalc" Content="=" HorizontalAlignment="Left" Margin="631,476,0,0" VerticalAlignment="Top" Click="answerCalc_Click" Width="105"/>
-        <TextBlock x:Name="calculationText" HorizontalAlignment="Left" Text="Placeholder" TextWrapping="Wrap" VerticalAlignment="Top" Margin="511,222,0,0"
-                   Height="30" Width="225" TextAlignment="Right" FontSize="20"/>
+        <TextBlock x:Name="calculationText" HorizontalAlignment="Left" Text="{Binding CalcString}" TextWrapping="Wrap" VerticalAlignment="Top" Margin="510,222,0,0"
+                   Height="30" Width="224" TextAlignment="Right" FontSize="20"/>
+        <Rectangle HorizontalAlignment="Left" Height="320" Margin="495,202,0,0" VerticalAlignment="Top" Width="255" RequestedTheme="Dark" StrokeThickness="3" Stroke="Black" />
+        <Rectangle HorizontalAlignment="Left" Height="34" Margin="507,220,0,0" VerticalAlignment="Top" Width="231" RequestedTheme="Dark" StrokeThickness="2" Stroke="Black" />
+
     </Grid>
 </Page>
